@@ -1,0 +1,21 @@
+name: Directory review finding / 社区审核意见
+description: The community directory reported something the skill doesn't handle yet. 社区市场审核报了 skill 还不认识的问题。
+labels: [review-finding]
+body:
+  - type: textarea
+    id: finding
+    attributes:
+      label: Finding / 审核意见
+      description: Paste it with the review's "Copy as Markdown" button. 用审核页的 Copy as Markdown 按钮复制过来。
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Fix that worked / 有效的修法
+      description: What you changed, if you found a fix. 如果已经修好，写下改了什么。
+  - type: input
+    id: date
+    attributes:
+      label: Review date / 审核日期
+      placeholder: "2026-10-10"

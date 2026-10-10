@@ -1,0 +1,25 @@
+name: Bug report / 问题反馈
+description: The skill did something wrong or got stuck. skill 做错了或者卡住了。
+labels: [bug]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase / 阶段
+      options: ["1 Survey", "2 Checks", "3 Testing in Obsidian", "4 README and images", "5 Repository and release", "6 Directory submission", "7 After listing", "Not sure"]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / 发生了什么？
+      description: What you asked for, what Claude did, and what you expected. 你的请求、Claude 的操作和你期望的结果。
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment / 环境
+      placeholder: "Claude Code 2.x, macOS 15, Obsidian 1.13.7, skill 1.0.0"
+    validations:
+      required: true

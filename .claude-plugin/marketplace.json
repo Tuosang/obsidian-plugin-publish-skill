@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "obsidian-plugin-publish-skill",
+  "description": "Claude Code skill for publishing Obsidian plugins to GitHub and the Obsidian community directory.",
+  "owner": {
+    "name": "Kevin Yan",
+    "url": "https://github.com/Tuosang"
+  },
+  "plugins": [
+    {
+      "name": "obsidian-plugin-publish",
+      "description": "Take an Obsidian plugin from working code to a polished GitHub release and an approved listing in the Obsidian community directory.",
+      "version": "1.0.0",
+      "author": { "name": "Kevin Yan", "url": "https://github.com/Tuosang" },
+      "source": "./",
+      "category": "development",
+      "homepage": "https://github.com/Tuosang/obsidian-plugin-publish-skill"
+    }
+  ]
+}
