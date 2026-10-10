@@ -30,14 +30,14 @@
 ```mermaid
 flowchart LR
     A["1 · 摸底"] --> B["2 · 通过官方检查"] --> C["3 · 在 Obsidian 里实测"] --> D["4 · README 与配图"]
-    D --> E["5 · 仓库与发布"] --> F["6 · 社区审核"] --> G["7 · 上架"]
-    E -.- GE{{"由你确认<br/>公开仓库 · 推送 · 发布"}}
-    F -.- GF{{"由你确认<br/>开发者政策 · Publish"}}
-    classDef gate fill:#f3e8ff,stroke:#7c3aed,color:#3b0764
+    D --> E["5 · 仓库与发布<br/>由你确认：仓库 · 推送 · 发布"] --> F["6 · 社区审核<br/>由你确认：政策 · Publish"] --> G["7 · 上架"]
+    classDef gate fill:#f3e8ff,stroke:#7c3aed,stroke-width:2px,color:#3b0764
     classDef done fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class GE,GF gate
+    class E,F gate
     class G done
 ```
+
+<sub>紫色步骤会先等你明确同意，之后才会公开任何内容或以你的名义操作。</sub>
 
 | 阶段 | Claude 做什么 | 由你决定或操作 |
 | --- | --- | --- |
@@ -61,18 +61,18 @@ flowchart LR
 
 这个 skill 提炼自 **[Sticky Folders](https://github.com/Tuosang/obsidian-sticky-folders)** 的发布过程。这是一个把上级文件夹钉在文件列表顶部的插件，从能跑的代码到通过审核、上架，只用了一次对话。
 
+<p align="center"><img src="docs/images/case-listing.png" alt="Sticky Folders 在 Obsidian 社区插件市场的页面：Add to Obsidian 按钮，健康度 Excellent，审核 Passed"><br><sub>Obsidian 社区插件市场上的正式页面：健康度 <i>Excellent</i>，审核 <i>Passed</i>。</sub></p>
+
 <table>
   <tr>
-    <th width="50%">它产出的 README</th>
-    <th width="50%">它从示例库录制的演示动图</th>
+    <th width="62%">它写出的 README</th>
+    <th width="38%">它从示例库录制的演示动图</th>
   </tr>
   <tr>
-    <td><img src="docs/images/case-readme.png" alt="Sticky Folders 在 GitHub 上的 README：标题、徽章、语言切换和演示开头"></td>
-    <td align="center"><img src="docs/images/case-demo.gif" width="300" alt="演示动图：滚动很深的文件夹树时，上级文件夹钉在顶部"></td>
+    <td><img src="docs/images/case-readme.png" alt="Sticky Folders 在 GitHub 上的 README：标题、徽章、语言切换和开启前后对比"></td>
+    <td align="center"><img src="docs/images/case-demo.gif" width="260" alt="演示动图：滚动很深的文件夹树时，上级文件夹钉在顶部"></td>
   </tr>
 </table>
-
-<p><img src="docs/images/case-listing.png" alt="Sticky Folders 在 Obsidian 社区插件市场的页面：Add to Obsidian 按钮，健康度 Excellent，审核 Passed"></p>
 
 社区市场自动审核的结果：
 

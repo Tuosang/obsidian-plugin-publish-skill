@@ -30,14 +30,14 @@ You stay in charge of everything that is public or personal. Claude prepares eac
 ```mermaid
 flowchart LR
     A["1 · Survey"] --> B["2 · Pass the checks"] --> C["3 · Test in Obsidian"] --> D["4 · README and images"]
-    D --> E["5 · Repository and release"] --> F["6 · Directory review"] --> G["7 · Listed"]
-    E -.- GE{{"You approve<br/>public repo · push · release"}}
-    F -.- GF{{"You approve<br/>policies · Publish"}}
-    classDef gate fill:#f3e8ff,stroke:#7c3aed,color:#3b0764
+    D --> E["5 · Repository and release<br/>you approve repo · push · release"] --> F["6 · Directory review<br/>you approve policies · Publish"] --> G["7 · Listed"]
+    classDef gate fill:#f3e8ff,stroke:#7c3aed,stroke-width:2px,color:#3b0764
     classDef done fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class GE,GF gate
+    class E,F gate
     class G done
 ```
+
+<sub>Purple steps wait for your explicit approval before anything becomes public or is done in your name.</sub>
 
 | Phase | What Claude does | What stays with you |
 | --- | --- | --- |
@@ -61,18 +61,18 @@ flowchart LR
 
 The skill was distilled from publishing **[Sticky Folders](https://github.com/Tuosang/obsidian-sticky-folders)**, a plugin that pins parent folders at the top of the file explorer. It went from working code to an approved listing in a single session.
 
+<p align="center"><img src="docs/images/case-listing.png" alt="The Sticky Folders page in the Obsidian community directory: Add to Obsidian button, health Excellent, review Passed"><br><sub>The live listing in the Obsidian community directory: health <i>Excellent</i>, review <i>Passed</i>.</sub></p>
+
 <table>
   <tr>
-    <th width="50%">The README it produced</th>
-    <th width="50%">The demo GIF, from a demo vault</th>
+    <th width="62%">The README it wrote</th>
+    <th width="38%">The demo GIF it recorded</th>
   </tr>
   <tr>
-    <td><img src="docs/images/case-readme.png" alt="The Sticky Folders README on GitHub: title, badges, language switch and the start of the demo"></td>
-    <td align="center"><img src="docs/images/case-demo.gif" width="300" alt="Demo GIF: scrolling a deep folder tree while parent folders stay pinned"></td>
+    <td><img src="docs/images/case-readme.png" alt="The Sticky Folders README on GitHub: title, badges, language switch and the before/after comparison"></td>
+    <td align="center"><img src="docs/images/case-demo.gif" width="260" alt="Demo GIF from a demo vault: scrolling a deep folder tree while parent folders stay pinned"></td>
   </tr>
 </table>
-
-<p><img src="docs/images/case-listing.png" alt="The Sticky Folders page in the Obsidian community directory: Add to Obsidian button, health Excellent, review Passed"></p>
 
 The directory's automated review, as the skill drove it:
 
